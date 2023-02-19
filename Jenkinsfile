@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'g++ -o cc_test ./main/cc_test.cpp'
+                sh 'g++ -o cc_test cc_test.cpp'
             }
         }
         stage('Test'){
